@@ -1,0 +1,13 @@
+@import "tailwindcss"; 
+
+.errorPage_main{
+  @apply flex flex-col gap-2 items-center px-10 justify-center h-screen bg-gray-100 text-gray-900
+}
+
+.error_message{
+  @apply text-xl text-yellow-800 font-bold;
+}
+
+.errorPage_button{
+  @apply px-2 py-1 w-30 bg-yellow-600 text-white rounded-lg text-lg font-semibold cursor-pointer hover:bg-yellow-700 transition-all duration-300;
+}

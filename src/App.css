@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  /* --font-display: "Bona Nova";  */
+  --font-display: "sans"; 
+}  
+
+*{
+  @apply m-0 p-0 box-border;
+}
+
+body{
+  @apply font-display;
+}
+
+
+
+
+
+
+
+
+@import "tailwindcss";
+
+/* Base styles (Mobile-first) */
+.main{
+  @apply w-full px-6;
+}
+
+h1{
+  @apply text-lg font-bold;
+}
+
+
+/* Tablet Styles */
+@media (min-width: 640px) {
+  .main{
+    @apply w-full px-8;
+  }
+
+  h1{
+    @apply text-xl font-bold;
+  }
+  
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .main{
+    @apply w-full px-10;
+  }
+
+  h1{
+    @apply text-2xl font-bold;
+  }
+  
+}

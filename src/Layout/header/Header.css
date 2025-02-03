@@ -1,0 +1,58 @@
+
+@import "tailwindcss";
+
+/* Base styles (Mobile-first) */
+.main_header {
+  @apply bg-black text-white flex items-center py-2;
+}
+
+.header_container {
+  @apply w-full flex text-[11px] justify-center items-center;
+}
+
+.header_paragraph {
+  @apply pr-2 text-[11px] text-center; 
+}
+
+.dropdown {
+  @apply w-18 h-6 flex justify-center items-center bg-black text-white font-bold  text-[10px];
+}
+
+/* Tablet Styles */
+@media (min-width: 640px) {
+  .main_header {
+    @apply flex-row; 
+  }
+
+  .header_container {
+    @apply text-sm;
+  }
+
+  .header_paragraph {
+    @apply text-sm text-left; 
+  }
+ 
+  .dropdown {
+    @apply w-20 h-8 text-sm;
+  }
+
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .main_header {
+        @apply flex-row; 
+      }
+
+      .header_container {
+        @apply text-base;
+      }
+    
+      .header_paragraph {
+        @apply text-base text-left; 
+      }
+     
+      .dropdown {
+        @apply w-24 h-10 text-base;
+      }
+}
